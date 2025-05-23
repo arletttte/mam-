@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Mom!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff4081;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .heart {
+            font-size: 1.5em;
+            color: #ff4081;
+            line-height: 1.2;
+            margin: 20px 0;
+            white-space: pre;
+            cursor: pointer; /* Makes the heart clickable */
+        }
+        .hidden {
+            display: none; /* Initially hides the element */
+        }
+        img {
+            margin-top: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉🎂 Happy Birthday, Mom! 🎂🎉</h1>
+    <p>Querida mamá,</p>
+    <p>Felices 50 años!</p>
+    <p>Espero Diosito te conceda muchos años más de vida con nosotros,</p>
+    <p>gracias por todo lo que haces. ¡Te quiero mucho!</p>
+    <p>Que tu día esté lleno de felicidad, amor y sorpresas.</p>
+
+    <!-- Heart -->
+    <div id="heart" class="heart" onclick="replaceHeartWithImage()">
+        ******       ******<br>
+       **********   **********<br>
+      ************* *************<br>
+      ***************************<br>
+       *************************<br>
+        ***********************<br>
+         *********************<br>
+          *******************<br>
+           *****************<br>
+            ***************<br>
+             *************<br>
+              ***********<br>
+               *********<br>
+                *******<br>
+                 *****<br>
+                  ***<br>
+                   *
+    </div>
+
+    <!-- Hidden Image -->
+    <img id="birthdayImage" class="hidden" src="./Moms%20Birthday.JPG" alt="Happy Birthday Mom!">
+
+    <!-- JavaScript -->
+    <script>
+        function replaceHeartWithImage() {
+            // Get the heart and image elements
+            const heart = document.getElementById('heart');
+            const image = document.getElementById('birthdayImage');
+
+            // Hide the heart
+            heart.style.display = 'none';
+
+            // Show the image
+            image.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
